@@ -1,0 +1,43 @@
+#include<array>
+#include <vector>
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    vector <int> v;
+    //cout<<"Size is "<< v.capacity()<<endl;
+    v.push_back(1);
+    cout<<"Capacity is "<< v.capacity()<<endl;
+    v.push_back(2);
+    cout<<"Capacity is "<< v.capacity()<<endl;
+    v.push_back(2);
+    cout<<"Capacity is "<< v.capacity()<<endl;
+    cout<<"Size is "<<v.size()<<endl;
+    cout<<"Element at 2nd index is "<<v.at(2)<<endl;
+    cout<<"Front Element is "<<v.front()<<endl;
+    cout<<"back Element is "<<v.back()<<endl; 
+    //to clear last element using pop
+    cout<<"Before clearing last element - "<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+    }cout<<endl;
+    v.pop_back();
+
+    cout<<"After clearing last element "<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+    }cout<<endl;
+    /*these 3 commands are used to display an array
+    for(int i:v){
+        cout<<i<<" ";
+    }cout<<endl;
+    */
+
+    //when u knw the size of vector u want to create
+    vector <int> vect(6,1);//6 is the size and 1 is the nmber by which u want to initialize the array
+    for(int i:vect){
+        cout<<i<<" ";
+    }cout<<endl;
+    
+
+}
