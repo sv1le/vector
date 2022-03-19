@@ -39,5 +39,10 @@ int main() {
         cout<<i<<" ";
     }cout<<endl;
     
+    
+    /*remember always write vector<int>v(40) to create a vector of 40 elements capacity
+    if u write,vector<int>v[50],it will make an array of v with size of 50,containing 50 vectors,bt we dont want dat
+    */
+    
 
 }
